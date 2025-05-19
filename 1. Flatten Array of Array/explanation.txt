@@ -60,4 +60,3 @@ Or using modern JavaScript:
 
 const flatten = arr =>
     arr.reduce((acc, val) => acc.concat(Array.isArray(val) ? flatten(val) : val), []);
-Let me know if you want to flatten arrays only one level (not deeply recursive).
