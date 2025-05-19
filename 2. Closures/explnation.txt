@@ -1,0 +1,81 @@
+Code Walkthrough
+
+function x() {
+    var a = 7;
+    function y() {
+        console.log(a);
+    }
+
+    return y;
+}
+
+var z = x();
+console.log(z);  // prints function definition
+z();             // prints 7
+📦 What's Happening Here?
+1. Function x is declared:
+Inside x, we declare a variable a = 7, and a nested function y() that logs the value of a.
+
+2. x() is invoked:
+
+var z = x();
+When x() is called:
+
+It creates a new execution context.
+
+Declares a = 7.
+
+Declares the inner function y, which closes over a.
+
+Returns function y to z.
+
+So now:
+
+z === y;
+But here's the magic: y remembers the variable a from x()’s scope, even after x() has finished execution.
+
+🔐 Closure Definition
+A closure is a function along with its lexical environment (scope).
+
+In this case:
+
+Function y + its surrounding scope (a = 7) from when it was created in x() = Closure
+
+📦 Visual Representation
+
+x() execution:
+  a = 7
+  y = function() { console.log(a); }
+
+Returns y
+
+Now: 
+  z = y, which still has access to a = 7
+🧠 When z() is called:
+
+z();  // Logs 7
+Even though x() is done executing and its local variables should be gone, the function y (assigned to z) closes over the variable a. That’s the closure in action.
+
+📚 Why is this important?
+Closures are used in:
+
+Data privacy (like private variables)
+
+Function factories
+
+Maintaining state in asynchronous code
+
+Event handlers, callbacks
+
+🔍 Pro Tip: Use debugger
+Put a debugger; inside y() to inspect the closure in browser dev tools:
+
+function x() {
+    var a = 7;
+    function y() {
+        debugger;
+        console.log(a);
+    }
+    return y;
+}
+This will let you see the closure scope in the DevTools 🔬.
