@@ -1,0 +1,63 @@
+Flattening an array means converting a nested (multi-dimensional) array into a single-level array where all elements are listed in a linear fashion, regardless of how deeply they were nested.
+
+👇 Given Array:
+let arr = [1, 2, [3, 4, 5], 6, [7, 8, [9, 10, 11]]];
+This array contains:
+
+Numbers directly (e.g., 1, 2, 6)
+
+Nested arrays (e.g., [3, 4, 5])
+
+A deeper nested array inside another array: [7, 8, [9, 10, 11]]
+
+✅ Goal:
+Transform this into:
+
+[1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11]
+All values, regardless of how deeply nested they were, are now in one flat array.
+
+🔍 Explanation of the Code:
+
+let output = [];
+
+function flatten(arr) {
+    for (i = 0; i < arr.length; i++) {
+        if (Array.isArray(arr[i])) {
+            flatten(arr[i]); // Recursively flatten nested arrays
+        } else {
+            output.push(arr[i]); // If it's a number, push to output
+        }
+    }
+    return output;
+}
+Breakdown:
+The function flatten takes an array as input.
+
+It loops through each item:
+
+If the item is an array (Array.isArray(arr[i])), it calls itself recursively to go deeper into the structure.
+
+If the item is not an array, it pushes the item to the output array.
+
+❗ Notes:
+This version uses a global output array, which can cause issues if flatten() is called multiple times. A cleaner version would pass the output as an argument or use local scoping.
+
+🧼 Clean Version (no global variables):
+
+function flatten(arr) {
+    let result = [];
+    for (let i = 0; i < arr.length; i++) {
+        if (Array.isArray(arr[i])) {
+            result = result.concat(flatten(arr[i]));
+        } else {
+            result.push(arr[i]);
+        }
+    }
+    return result;
+}
+Or using modern JavaScript:
+
+
+const flatten = arr =>
+    arr.reduce((acc, val) => acc.concat(Array.isArray(val) ? flatten(val) : val), []);
+Let me know if you want to flatten arrays only one level (not deeply recursive).
