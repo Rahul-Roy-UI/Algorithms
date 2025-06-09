@@ -1,0 +1,145 @@
+for(var i = 0; i < arr.length; i++) {
+  var currNum = arr[i];
+  var countePArt = sum - currNum;
+  if(hastable.indexOf(countePArt) !== -1){
+    pairs.push([currNum, countePArt])
+  }
+  hastable.push(currNum);
+}
+We’ll also reference this call:
+
+twoSum([1,2,3,4,5], 7)
+So arr = [1, 2, 3, 4, 5] and sum = 7.
+
+Step-by-Step Explanation:
+1. First iteration (i = 0)
+currNum = arr[0] = 1
+
+countePArt = 7 - 1 = 6
+
+Check: hastable.indexOf(6) → it's not in hastable, so nothing is pushed into pairs
+
+Add currNum to hastable: hastable = [1]
+
+2. Second iteration (i = 1)
+currNum = arr[1] = 2
+
+countePArt = 7 - 2 = 5
+
+Check: hastable.indexOf(5) → not in hastable
+
+Add 2 to hastable: hastable = [1, 2]
+
+3. Third iteration (i = 2)
+currNum = arr[2] = 3
+
+countePArt = 7 - 3 = 4
+
+Check: hastable.indexOf(4) → not in hastable
+
+Add 3 to hastable: hastable = [1, 2, 3]
+
+4. Fourth iteration (i = 3)
+currNum = arr[3] = 4
+
+countePArt = 7 - 4 = 3
+
+Check: hastable.indexOf(3) → found at index 2
+
+Push [4, 3] into pairs: pairs = [[4, 3]]
+
+Add 4 to hastable: hastable = [1, 2, 3, 4]
+
+5. Fifth iteration (i = 4)
+currNum = arr[4] = 5
+
+countePArt = 7 - 5 = 2
+
+Check: hastable.indexOf(2) → found at index 1
+
+Push [5, 2] into pairs: pairs = [[4, 3], [5, 2]]
+
+Add 5 to hastable: hastable = [1, 2, 3, 4, 5]
+
+Final Output:
+
+[[4, 3], [5, 2]]
+These are all the pairs in the array that add up to 7.
+
+Note on Variable Naming:
+countePArt seems like a typo of counterPart. It should be renamed for clarity.
+
+Also, hastable should be hashTable — and better implemented as an object or Set for faster lookups (O(1) time instead of indexOf, which is O(n)).
+
+Let me know if you'd like the optimized version of this code too.
+
+=============================================================================
+
+Let's break down how the if condition inside the loop reacts during each iteration:
+
+if(hastable.indexOf(countePArt) !== -1){
+  pairs.push([currNum, countePArt])
+}
+This line does two things:
+
+✅ What it does:
+Checks if countePArt already exists in the hastable array:
+
+hastable.indexOf(countePArt) returns:
+
+An index ≥ 0 if found
+
+-1 if not found
+
+If it is found, that means the array has already seen the value needed to pair with currNum to make the target sum.
+
+If found, it pushes the pair [currNum, countePArt] into the pairs array.
+
+🔁 How it reacts per iteration (based on twoSum([1,2,3,4,5], 7)):
+Loop 0:
+currNum = 1, countePArt = 6
+
+hastable = []
+
+indexOf(6) = -1 → not found → if condition fails, nothing is added
+
+Loop 1:
+currNum = 2, countePArt = 5
+
+hastable = [1]
+
+indexOf(5) = -1 → not found → if condition fails
+
+Loop 2:
+currNum = 3, countePArt = 4
+
+hastable = [1, 2]
+
+indexOf(4) = -1 → not found → if condition fails
+
+Loop 3:
+currNum = 4, countePArt = 3
+
+hastable = [1, 2, 3]
+
+indexOf(3) = 2 → found → if condition passes
+
+[4, 3] is added to pairs
+
+Loop 4:
+currNum = 5, countePArt = 2
+
+hastable = [1, 2, 3, 4]
+
+indexOf(2) = 1 → found → if condition passes
+
+[5, 2] is added to pairs
+
+✅ Summary:
+This if condition:
+
+Only triggers when the needed matching number was already seen earlier in the array.
+
+Ensures that pairs are only formed after one of the numbers has been processed (avoids duplicates like both [2,5] and [5,2]).
+
+Let me know if you'd like to see an optimized version that uses a Set or Map instead of indexOf!
