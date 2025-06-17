@@ -1,8 +1,4 @@
 // ! merge sort ?
-// https://chatgpt.com/c/68401d55-04e0-8007-b90c-4a95fad629e2
-// https://www.udemy.com/course/learning-algorithms-in-javascript-from-scratch/learn/lecture/7715248#overview ==> overview
-// https://www.udemy.com/course/learning-algorithms-in-javascript-from-scratch/learn/lecture/7715322#overview ==> animation
-
 function mergeSort(array) {
     if (array.length <= 1) return array; // Base case
 

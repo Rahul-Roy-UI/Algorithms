@@ -1,5 +1,4 @@
 // ! Two Sum
-// https://www.udemy.com/course/learning-algorithms-in-javascript-from-scratch/learn/lecture/7707498#overview
 // https://www.w3schools.com/js/js_arrays.asp ==> read more
 
 function twoSum(numArray, sum) {

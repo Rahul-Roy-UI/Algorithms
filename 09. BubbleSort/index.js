@@ -1,6 +1,4 @@
 // Bubble Sort ?
-// https://www.udemy.com/course/learning-algorithms-in-javascript-from-scratch/learn/lecture/7707594#overview
-
 function bubbleSort(array) {
     for (var i = array.length; i > 0; i--) {
         for (var j = 0; j < i; j++) {

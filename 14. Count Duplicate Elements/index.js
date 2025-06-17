@@ -1,6 +1,4 @@
 // ! Count Duplicate Elements
-// https://www.youtube.com/watch?v=QoQM0TbrC9A&list=PLC8OkhrVTHNFITtT_TzfBbn8SohEU8Cpa&index=7&ab_channel=NishaSingla
-// https://chatgpt.com/c/6841af92-1cb8-8007-aecd-c1a5ea7234c8
 // https://www.w3schools.com/jsref/jsref_map.asp ==> JavaScript Array map()
 // https://www.w3schools.com/js/js_if_else.asp ==> JavaScript if, else, and else if
 

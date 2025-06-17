@@ -1,4 +1,7 @@
-// https://www.udemy.com/course/learning-algorithms-in-javascript-from-scratch/learn/lecture/7707448#overview
+// ! Reverse Words
+// https://www.w3schools.com/jsref/jsref_foreach.asp ==> JavaScript Array forEach() is an ECMAScript5 (ES5) feature.
+// * The forEach() method is not executed for empty elements.
+
 function reverseWords(string) {
     var wordsArr = string.split(' ');
     var reversedWorksArr = [];
