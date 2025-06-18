@@ -7,7 +7,7 @@ function factorial(num) {
 
     // Base case
     if (num === 0 || num === 1) {
-        return num;
+        return 1;
     } else {
         return num * factorial(num - 1);
     }
