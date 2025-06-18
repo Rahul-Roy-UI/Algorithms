@@ -1,4 +1,4 @@
-// ! 04. setTimeout + Closures Interview Question
+// ! setTimeout + Closures Interview Question
 function x() {
     for (var i = 0; i <= 5; i++) {
 
