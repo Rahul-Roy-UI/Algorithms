@@ -45,8 +45,6 @@ This repository contains a collection of essential JavaScript coding problems an
 
 ### ⚙️ JavaScript Concepts
 
-### ⚙️ JavaScript Concepts
-
 12. **Pure Functions**  
     Functions with no side effects that return the same output for the same input.
 
