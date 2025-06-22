@@ -41,6 +41,9 @@ This repository contains a collection of essential JavaScript coding problems an
 11. **Flatten Array of Arrays**  
    Flatten nested arrays into a single-level array.
 
+12. **Largest Number in Array**  
+    Find the largest number in an array by iterating and comparing each value.
+
 ---
 
 ### ⚙️ JavaScript Concepts
@@ -71,3 +74,6 @@ This repository contains a collection of essential JavaScript coding problems an
 
 20. **Add Numbers**  
     Simple function to add multiple numbers together, demonstrating concepts like rest parameters or recursion.
+
+21. **Event Bubbling, Capturing, and Delegation**  
+    Understand how events propagate in the DOM and how to manage them using event delegation. Includes concepts like `event.stopPropagation()` and `event.target`.
