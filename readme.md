@@ -50,6 +50,9 @@ This repository contains a collection of essential JavaScript coding problems an
 14. **Count Digits**  
     Count the number of digits in a given integer. Handles negative numbers using `Math.abs()` and uses a loop with `Math.floor()` to reduce the number step-by-step.
 
+15. **palindromeNumber**  
+    Check if an integer reads the same forwards and backwards without using strings.
+
 ---
 
 ### ⚙️ JavaScript Concepts
