@@ -12,7 +12,6 @@ function palindromeNumber(num) {
 
     return numcopy === rev;
 
-
 }
 
 palindromeNumber(12321);
