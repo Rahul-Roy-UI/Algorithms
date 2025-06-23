@@ -53,6 +53,9 @@ This repository contains a collection of essential JavaScript coding problems an
 15. **palindromeNumber**  
     Check if an integer reads the same forwards and backwards without using strings.
 
+16. **Reverse Integer**
+    Reverse a 32-bit signed integer's digits, returning 0 if the result overflows the 32-bit signed integer range [ − 2^31 , 2^31 − 1 ] [−2^31 ,2^31 −1].
+
 ---
 
 ### ⚙️ JavaScript Concepts
