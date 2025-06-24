@@ -59,6 +59,9 @@ This repository contains a collection of essential JavaScript coding problems an
 17. **Remove Duplicates from Sorted Array**  
     Remove duplicates in-place from a sorted array using two pointers and return the new length.
 
+18. **Remove Element from Array**  
+    Remove all occurrences of a given value from an array in-place and return the new length.
+
 ---
 
 ### ⚙️ JavaScript Concepts
