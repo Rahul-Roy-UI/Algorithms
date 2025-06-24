@@ -62,6 +62,9 @@ This repository contains a collection of essential JavaScript coding problems an
 18. **Remove Element from Array**  
     Remove all occurrences of a given value from an array in-place and return the new length.
 
+19. **Best Time to Buy and Sell Stock**  
+    Find the maximum profit by buying and selling a stock once using a single pass with min tracking.
+
 ---
 
 ### ⚙️ JavaScript Concepts
