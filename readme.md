@@ -41,62 +41,62 @@ This repository contains a collection of essential JavaScript coding problems an
 11. **Flatten Array of Arrays**  
     Flatten nested arrays into a single-level array.
 
-12. **Largest Number in Array**  
+12. **Count Duplicate Elements**  
+    Count how many times each element appears in an array or string.
+
+13. **Prime Numbers**  
+    Check whether a number is prime and/or generate a list of primes.
+
+14. **Largest Number in Array**  
     Find the largest number in an array by iterating and comparing each value.
 
-13. **Second Largest Number in Array**  
+15. **Second Largest Number in Array**  
     Find the second largest distinct number in an array, accounting for edge cases and duplicates.
 
-14. **Count Digits**  
+16. **Count Digits**  
     Count the number of digits in a given integer. Handles negative numbers using `Math.abs()` and uses a loop with `Math.floor()` to reduce the number step-by-step.
 
-15. **palindromeNumber**  
+17. **Palindrome Number**  
     Check if an integer reads the same forwards and backwards without using strings.
 
-16. **Reverse Integer**
+18. **Reverse Integer**
     Reverse a 32-bit signed integer's digits, returning 0 if the result overflows the 32-bit signed integer range [ − 2^31 , 2^31 − 1 ] [−2^31 ,2^31 −1].
 
-17. **Remove Duplicates from Sorted Array**  
+19. **Remove Duplicates from Sorted Array**  
     Remove duplicates in-place from a sorted array using two pointers and return the new length.
 
-18. **Remove Element from Array**  
+20. **Remove Element from Array**  
     Remove all occurrences of a given value from an array in-place and return the new length.
 
-19. **Best Time to Buy and Sell Stock**  
+21. **Best Time to Buy and Sell Stock**  
     Find the maximum profit by buying and selling a stock once using a single pass with min tracking.
 
 ---
 
 ### ⚙️ JavaScript Concepts
 
-12. **Pure Functions**  
+01. **Pure Functions**  
     Functions with no side effects that return the same output for the same input.
 
-13. **Function Currying**  
+02. **Function Currying**  
     Transforming a function with multiple arguments into a sequence of functions with one argument each.
 
-14. **Count Duplicate Elements**  
-    Count how many times each element appears in an array or string.
-
-15. **Callback Functions**  
+03. **Callback Functions**  
     Functions passed as arguments to other functions and executed later.
 
-16. **Closures**  
+04. **Closures**  
     Inner functions that remember variables from their outer scope.
 
-17. **Closures with setTimeout**  
+05. **Closures with setTimeout**  
     Explore closure behavior when used with `setTimeout` (commonly in loops).
 
-18. **Deep Clone**  
+06. **Deep Clone**  
     Recursively copy all nested levels of objects and arrays to prevent reference-related bugs.
 
-19. **Prime Numbers**  
-    Check whether a number is prime and/or generate a list of primes.
-
-20. **Add Numbers**  
+07. **Add Numbers**  
     Simple function to add multiple numbers together, demonstrating concepts like rest parameters or recursion.
 
-21. **Event Bubbling, Capturing, and Delegation**  
+08. **Event Bubbling, Capturing, and Delegation**  
     Understand how events propagate in the DOM and how to manage them using event delegation. Includes concepts like `event.stopPropagation()` and `event.target`.
 
 ---
