@@ -109,7 +109,7 @@ This repository contains a collection of essential JavaScript coding problems an
 02. **Remove Element from Array**  
     Remove all occurrences of a given value from an array in-place and return the new length.
 
-03. **Reverse String** 
+03. **Reverse String**  
     Reverse a string in-place (or in-place on a char array).
 
 04. **Best Time to Buy and Sell Stock**  
