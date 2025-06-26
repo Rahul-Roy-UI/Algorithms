@@ -49,6 +49,34 @@ This repository contains a collection of essential JavaScript coding problems an
 
 ---
 
+### ⚙️ JavaScript Concepts
+
+01. **Pure Functions**  
+    Functions with no side effects that return the same output for the same input.
+
+02. **Function Currying**  
+    Transform a function with multiple arguments into a sequence of functions with one argument each.
+
+03. **Callback Functions**  
+    Functions passed as arguments to other functions and executed later.
+
+04. **Closures**  
+    Inner functions that remember variables from their outer scope.
+
+05. **Closures with setTimeout**  
+    Explore closure behavior when used with `setTimeout` (commonly in loops).
+
+06. **Deep Clone**  
+    Recursively copy all nested levels of objects and arrays to prevent reference-related bugs.
+
+07. **Add Numbers**  
+    Simple function to add multiple numbers together, demonstrating concepts like rest parameters or recursion.
+
+08. **Event Bubbling, Capturing, and Delegation**  
+    Understand how events propagate in the DOM and how to manage them using event delegation. Includes concepts like `event.stopPropagation()` and `event.target`.
+
+---
+
 ### ⚙️ DSA
 
 #### 00 - Core Number & Pattern Challenges
@@ -81,11 +109,11 @@ This repository contains a collection of essential JavaScript coding problems an
 02. **Remove Element from Array**  
     Remove all occurrences of a given value from an array in-place and return the new length.
 
-03. **Best Time to Buy and Sell Stock**  
-    Find the maximum profit by buying and selling a stock once using a single pass with min tracking.
+03. **Reverse String** 
+    Reverse a string in-place (or in-place on a char array).
 
-04. **Maximum Profit from Single Buy & Sell**  
-    Efficient stock profit maximization using min-so-far and max-profit logic.
+04. **Best Time to Buy and Sell Stock**  
+    Find the maximum profit by buying and selling a stock once using a single pass with min tracking.
 
 05. **Move Zeroes**  
     Shift all zeroes to the end of an array while maintaining the order of non-zero elements.
@@ -100,29 +128,3 @@ This repository contains a collection of essential JavaScript coding problems an
     Find the element that appears only once in an array where every other element appears twice using XOR.
 
 ---
-
-### ⚙️ JavaScript Concepts
-
-01. **Pure Functions**  
-    Functions with no side effects that return the same output for the same input.
-
-02. **Function Currying**  
-    Transform a function with multiple arguments into a sequence of functions with one argument each.
-
-03. **Callback Functions**  
-    Functions passed as arguments to other functions and executed later.
-
-04. **Closures**  
-    Inner functions that remember variables from their outer scope.
-
-05. **Closures with setTimeout**  
-    Explore closure behavior when used with `setTimeout` (commonly in loops).
-
-06. **Deep Clone**  
-    Recursively copy all nested levels of objects and arrays to prevent reference-related bugs.
-
-07. **Add Numbers**  
-    Simple function to add multiple numbers together, demonstrating concepts like rest parameters or recursion.
-
-08. **Event Bubbling, Capturing, and Delegation**  
-    Understand how events propagate in the DOM and how to manage them using event delegation. Includes concepts like `event.stopPropagation()` and `event.target`.
