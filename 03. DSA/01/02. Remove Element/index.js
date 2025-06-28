@@ -15,4 +15,11 @@ function removeElement(nums, val) {
     return x;
 }
 
-removeElement([3, 2, 1, 5, 3, 4, 8, 3], 3);
+removeElement([3, 2, 1, 5, 3, 4, 8, 3], 3); // ! output 5
+
+// ! First 5 elements are the result (without 3)
+
+// ! 🧪 Time and Space Complexity:
+// * Time: O(n)
+
+// * Space: O(1) — in-place

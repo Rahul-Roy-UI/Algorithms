@@ -10,8 +10,8 @@ function reverseInteger(num) {
         num = Math.floor(num / 10);
     }
 
-    let limit = Math.pow(2, 31);
-    if (rev < -limit || rev > limit) return 0;
+    let limit = Math.pow(2, 31); // ! or use 2 ** 31
+    if (rev < -limit || rev > limit) return 0; // ! if (rev > limit - 1 || rev < -limit) return 0;
     return (orignalNum < 0) ? -rev : rev;
 }
 

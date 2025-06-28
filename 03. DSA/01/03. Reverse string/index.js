@@ -9,3 +9,9 @@ var reverseString = function (s) {
 let arr = ['H', 'e', 'l', 'l', 'o'];
 reverseString(arr);
 console.log(arr); // ['o', 'l', 'l', 'e', 'H']
+
+
+// !✅ Time and Space Complexity:
+// * Time: O(n)
+
+// * Space: O(1) (in-place)
