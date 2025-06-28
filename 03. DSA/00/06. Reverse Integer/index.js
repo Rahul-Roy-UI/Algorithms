@@ -11,8 +11,12 @@ function reverseInteger(num) {
     }
 
     let limit = Math.pow(2, 31); // ! or use 2 ** 31
-    if (rev < -limit || rev > limit) return 0; // ! if (rev > limit - 1 || rev < -limit) return 0;
+    // will it be ever negative limit negeative ?
+    if (rev < -limit || rev > limit) return 0; // ! if (rev > limit - 1 || rev < -limit) return 0; 
     return (orignalNum < 0) ? -rev : rev;
 }
 
 reverseInteger(-12367);
+
+// ! Notes
+// 2 ** 31 and Math.pow(2, 31) are functionally the same in JavaScript. Both evaluate to: 2147483648
