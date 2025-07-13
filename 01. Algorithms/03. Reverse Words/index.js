@@ -4,17 +4,17 @@
 
 function reverseWords(string) {
     var wordsArr = string.split(' ');
-    var reversedWorksArr = [];
+    var reversedWordsArr = [];
 
     wordsArr.forEach(word => {
         var reversedWord = '';
         for (var i = word.length - 1; i >= 0; i--) {
             reversedWord += word[i];
         }
-        reversedWorksArr.push(reversedWord);
+        reversedWordsArr.push(reversedWord);
     });
 
-    return reversedWorksArr.join(' ');
+    return reversedWordsArr.join(' ');
 }
 
 console.log(reverseWords('This is long name'));
