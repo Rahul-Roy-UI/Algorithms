@@ -1,0 +1,19 @@
+// What are Falsy and Truthy in JavaScript?
+
+// ❌ Falsy values:
+false
+0
+""
+null
+undefined
+NaN
+
+
+// ✅ Truthy values:
+true
+1
+"hello"
+[]
+{ }
+42
+"false"
