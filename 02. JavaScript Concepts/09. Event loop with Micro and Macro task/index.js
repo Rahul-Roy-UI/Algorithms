@@ -1,5 +1,8 @@
 // https://chatgpt.com/c/687a3046-6cdc-8007-a64b-48dc68ea9e0a
 
+console.log(1);
+
+
 // web api
 
 setTimeout(() => {

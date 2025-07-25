@@ -1,0 +1,11 @@
+// Conditional Rendering all 3 ways
+
+{isLoggedIn && <p>Welcome!</p>}          // short-circuit
+
+{isLoggedIn ? <p>Welcome</p> : <p>Login</p>}  // ternary
+
+{isLoggedIn ? (
+  <AdminDashboard />
+) : (
+  <UserDashboard />
+)}    // block JSX
